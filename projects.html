@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Projects — KALAIVANI M</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="glass-header">
+    <div class="site-name">KALAIVANI M</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card" data-aos="fade-up">
+        <i class="fas fa-laptop-code project-icon"></i>
+        <h3>Portfolio Website</h3>
+        <p>A modern responsive portfolio showcasing my skills, resume, and projects.</p>
+        <button class="btn" data-project="project1">Learn More</button>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-language project-icon"></i>
+        <h3>Badaga Speech-to-Text</h3>
+        <p>Deep learning model to recognize Badaga speech and translate into English text.</p>
+        <button class="btn" data-project="project2">Learn More</button>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-chart-bar project-icon"></i>
+        <h3>Skin Cancer Data Visualization</h3>
+        <p>Visualization and CNN-based skin cancer detection with an interactive Gradio interface.</p>
+        <button class="btn" data-project="project3">Learn More</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- MODALS -->
+
+  <!-- Project 1 Modal -->
+  <div id="project1" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Portfolio Website</h2>
+      <p>This is my personal <strong>portfolio website</strong> built using HTML, CSS, and JavaScript.  
+      - Showcases my resume, skills, and projects.  
+      - Fully responsive and mobile-friendly.  
+      - Features animations (AOS) for smooth UI/UX.</p>
+      <img src="images/project_portfolio.jpg" alt="Portfolio Website Preview">
+    </div>
+  </div>
+
+  <!-- Project 2 Modal -->
+  <div id="project2" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Badaga Speech-to-Text Translator</h2>
+      <p>A <strong>deep learning project</strong> focused on the <strong>Badaga language</strong>, which is low-resource.  
+      - Built a <strong>speech-to-text system</strong> with spectrogram feature extraction.  
+      - Used <strong>RNN/LSTM models</strong> for sequence prediction.  
+      - Translates spoken Badaga into <strong>English text</strong>.  
+      This work aims to preserve and promote the Badaga language digitally.</p>
+      <img src="images/project_badaga.jpg" alt="Badaga Speech-to-Text Project">
+    </div>
+  </div>
+
+  <!-- Project 3 Modal -->
+  <div id="project3" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Skin Cancer Data Visualization & Detection</h2>
+      <p>This project combines <strong>data visualization</strong> with <strong>deep learning</strong> for healthcare.  
+      - Analyzed skin cancer datasets with <strong>graphs and visual dashboards</strong>.  
+      - Built a <strong>CNN model</strong> to classify dermoscopic images into benign/malignant classes.  
+      - Integrated with <strong>Gradio</strong> to allow users to upload images and get real-time predictions.  
+      This shows the practical use of AI in <strong>medical diagnostics</strong>.</p>
+      <img src="images/project_skin.jpg" alt="Skin Cancer Detection Project">
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© <span id="year5"></span> Kalaivani Manickam</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script src="js/work.js"></script>
+</body>
+</html>
