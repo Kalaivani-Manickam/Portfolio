@@ -49,6 +49,11 @@ header .logo {
   letter-spacing: 1px;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav a {
   margin-left: 1.8rem;
   color: var(--muted);
@@ -57,6 +62,14 @@ nav a {
 }
 nav a:hover {
   color: var(--text);
+}
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--primary);
+  cursor: pointer;
 }
 
 /* CONTAINER */
@@ -181,7 +194,6 @@ h1, h2 {
   100% { transform: rotate(360deg); }
 }
 
-
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .hero {
@@ -195,5 +207,29 @@ h1, h2 {
     margin-top: 2rem;
     width: 250px;
     height: 250px;
+  }
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: var(--accent);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  }
+  nav.active {
+    display: flex;
+  }
+  nav a {
+    margin: 10px 0;
+  }
+  .menu-toggle {
+    display: block;
   }
 }
