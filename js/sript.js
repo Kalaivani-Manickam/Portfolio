@@ -34,4 +34,12 @@ const nav = document.getElementById("navbar");
 
 toggle.addEventListener("click", () => {
   nav.classList.toggle("active");
+
+  // ✅ Close menu when link is clicked
+document.querySelectorAll("#nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("nav-links").classList.remove("active");
+  });
+});
+
 });
